@@ -1,6 +1,6 @@
 ## Introduction
 
-This is the basic model for multi-class classification on COPD dataset
+This is the basic model for multi-class classification on GSC+ dataset
 
 ### Start
-run train.py 
+run main.py 
