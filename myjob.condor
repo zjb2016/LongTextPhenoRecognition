@@ -1,0 +1,24 @@
+####################
+##
+## Condor Submission File
+## run_myjob.condor
+####################
+
+### SETTINGS #########################
+#rank           =
+#requirements    = (Machine == "c8k15.cs.cityu.edu.hk")
+priority        = 0
+notification    = Never
+notify_user     = bojzhang2-c@my.cityu.edu.hk
+getenv          = True
+#environment    = HOME=$ENV(HOME)
+
+### JOB ###########################
+executable      = /usr/bin/python3
+arguments       = main.py
+input           =
+output          = run_main.out
+error           = run_main.err
+log             = run_main.log
+
+queue
